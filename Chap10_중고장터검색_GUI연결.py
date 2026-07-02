@@ -55,7 +55,7 @@ class DemoForm(QMainWindow):
             url = (
                 "https://www.clien.net/service/board/sold"
                 "?&od=T31&po=" + str(n)
-            )
+             )
 
             data = urllib.request.urlopen(url).read()
             soup = BeautifulSoup(data, "html.parser")
